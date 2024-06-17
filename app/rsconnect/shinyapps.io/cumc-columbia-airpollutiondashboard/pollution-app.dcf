@@ -1,0 +1,13 @@
+name: pollution-app
+title: pollution-app
+username: cumc-columbia-airpollutiondashboard
+account: cumc-columbia-airpollutiondashboard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12065040
+bundleId: 8656779
+url: https://cumc-columbia-airpollutiondashboard.shinyapps.io/pollution-app/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|dataprep

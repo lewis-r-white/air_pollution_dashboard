@@ -1,0 +1,31 @@
+---
+title: "sd-card-data-process"
+author: "Sanne Glastra"
+date: "2024-05-28"
+output: html_document
+---
+
+```{r}
+# EXAMPLE OF HOW TO IMPORT AND PROCESS SD CARD DATA
+
+library(data.table)  
+
+data <- as.data.frame(fread("DATA_20240110.csv", fill = T))
+
+# Extract device serial number from the data
+deviceSN_value <- data %>%
+    filter(V1 == "deviceSN") %>%
+    pull(V2)
+
+# Assuming your data frame is named 'data'
+colnames(data) = data[4,]
+data <- data[-(1:4), -70]  # Remove the first three rows and 70th column
+
+# If you want to reset row indexes
+rownames(data) <- NULL
+
+# Remove the metadata rows
+data_clean <- data %>%
+  mutate(monitor = deviceSN_value)
+```
+``
