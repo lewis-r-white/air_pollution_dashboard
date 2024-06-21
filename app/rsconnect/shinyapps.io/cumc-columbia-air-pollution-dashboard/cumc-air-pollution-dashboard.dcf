@@ -1,0 +1,10 @@
+name: cumc-air-pollution-dashboard
+title:
+username: cumc-columbia-air-pollution-dashboard
+account: cumc-columbia-air-pollution-dashboard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12217501
+bundleId: 8773632
+url: https://cumc-columbia-air-pollution-dashboard.shinyapps.io/cumc-air-pollution-dashboard/
+version: 1
